@@ -26,6 +26,13 @@ public class Part10ReactiveToBlocking {
 
 //========================================================================================
 
+	/**
+	 *
+	 * Tansforme esto en un bloque Flux
+	 *
+	 * @param flux
+	 * @return
+	 */
 	// TODO Return the users contained in that Flux
 	Iterable<User> fluxToValues(Flux<User> flux) {
 		return flux.toIterable();

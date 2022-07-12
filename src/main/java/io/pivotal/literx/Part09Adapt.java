@@ -42,6 +42,17 @@ public class Part09Adapt {
 
 //========================================================================================
 
+	/**
+	 * Puede hacer que los tipos RxJava3 y Reactor 3 interactúen
+	 * sin una sola biblioteca externa.
+	 *
+	 * Finalmente, puede transformar fácilmente Monoa Java 8 CompletableFuturey viceversa.
+	 * Observe cómo todos estos métodos de conversión comienzan con
+	 * from(al convertir un tipo externo a uno de Reactor) y
+	 * (al convertir un tipo de Reactor a uno externo).
+	 * @param flux
+	 * @return
+	 */
 	// TODO Adapt Flux to RxJava Flowable
 	Flowable<User> fromFluxToFlowable(Flux<User> flux) {
 		return Flowable.fromPublisher(flux);
